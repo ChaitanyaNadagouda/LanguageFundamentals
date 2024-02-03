@@ -1,6 +1,7 @@
 package Streams_n_Lambdas;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -31,6 +32,12 @@ public class Client {
         System.out.println(sum);
 
         System.out.println(numbers.stream().filter(n->n%2==0).findFirst());
+
+        Collections.sort(numbers,(n1,n2)->{
+            return n2-n1 ;
+        });
+        System.out.println(numbers);
+
 
     }
 }

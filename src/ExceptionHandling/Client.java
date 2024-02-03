@@ -3,12 +3,12 @@ package ExceptionHandling;
 import java.util.Scanner;
 
 public class Client {
-    public static void main(String[] args) throws DividebyZero, InvalidNumberException {
+    public static void main(String[] args) throws DividebyZero,InvalidNumberException{
         Scanner sc = new Scanner(System.in) ;
         int A = sc.nextInt() ;
         if(A<99){
-//            throw new InvalidNumberException() ;
-            throw new IllegalArgumentException() ;
+            throw new InvalidNumberException() ;
+//            throw new IllegalArgumentException() ;
         }
 
         divideBySmthng d1 = new divideBySmthng() ;
