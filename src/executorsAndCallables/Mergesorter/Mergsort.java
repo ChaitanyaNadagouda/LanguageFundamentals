@@ -16,7 +16,7 @@ public class Mergsort implements Callable<List<Integer>> {
         this.service = service ;
     }
     @Override
-    public List<Integer> call() throws Exception {
+    public List<Integer> call()  throws Exception {
         if(arr.size()<=1){
             return arr ;
         }
